@@ -17,6 +17,18 @@ const decrement = () => {
   }
 };
 
+let [color, setColor] = useState("red");
+const changeColor = () => {
+  let hex = "0123456789ABCDEF";
+  color = "#";
+  for (let i = 0; i < 6; i++) {
+    color += hex[Math.floor(Math.random() * 16)];
+  }
+  console.log(color);
+ document.body.style.backgroundColor = color;
+  setColor(color);
+};
+
   return (
     <>
      <h1>Chai or React</h1>
@@ -30,6 +42,8 @@ const decrement = () => {
       <button
       onClick={decrement}
       >Decrement</button>
+
+      <button onClick={changeColor}>Change Color</button>
     </>
   )
 }
