@@ -10,7 +10,6 @@ function App() {
      <Chai/>
      <h3>jsx syntax: {username} </h3>
     </>
- 
   )
 }
 

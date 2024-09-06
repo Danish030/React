@@ -14,7 +14,12 @@
         "openFiles": [
           "src/App.jsx"
         ]
-      }
+    },
+    "vscode": {
+        "extensions": [
+            "bradlc.vscode-tailwindcss"
+        ]
+    }
     },
     "portsAttributes": {
       "3000": {
